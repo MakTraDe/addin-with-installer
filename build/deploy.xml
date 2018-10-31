@@ -15,14 +15,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectToBuild Include="../project/project.sln">
+        <ProjectToBuild Include="RRR.AddIn.sln">
             <Properties>WebProjectOutputDir=$(PublishDir);OutputPath=$(OutputDir);Configuration=Dev</Properties>
         </ProjectToBuild>
     </ItemGroup>
 
-    <!-- <Target Name="Build"> -->
-        <!-- <MSBuild Projects="@(ProjectToBuild)"/> -->
-    <!-- </Target> -->
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
 
 	<Target Name="CreateWebConfigs" AfterTargets="Build">
 	<TransformXml
