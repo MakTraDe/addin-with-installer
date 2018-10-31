@@ -15,7 +15,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectToBuild Include="RRR.AddIn.sln">
+        <ProjectToBuild Include="$(SourceRoot)RRR.AddIn.sln">
             <Properties>WebProjectOutputDir=$(PublishDir);OutputPath=$(OutputDir);Configuration=Dev</Properties>
         </ProjectToBuild>
     </ItemGroup>
