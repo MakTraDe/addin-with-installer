@@ -8,6 +8,6 @@ namespace RRR.AddIn.ApiClient
 {
     public class BadClass
     {
-        bad
+        
     }
 }
