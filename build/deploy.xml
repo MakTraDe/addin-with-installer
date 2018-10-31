@@ -24,20 +24,20 @@
         <MSBuild Projects="@(ProjectToBuild)"/>
     </Target>
 
-	<Target Name="CreateWebConfigs" AfterTargets="Build">
-	<TransformXml
-		Source="$(TransformInputFile)"
-		Transform="$(TransformFile)"
-		Destination="$(TransformOutputFile)"
-	/>
-	</Target>
+	<!-- <Target Name="CreateWebConfigs" AfterTargets="Build"> -->
+	<!-- <TransformXml -->
+		<!-- Source="$(TransformInputFile)" -->
+		<!-- Transform="$(TransformFile)" -->
+		<!-- Destination="$(TransformOutputFile)" -->
+	<!-- /> -->
+	<!-- </Target> -->
 
-	<Target Name="AfterBuild" AfterTargets="CreateWebConfigs">
+	<Target Name="AfterBuild" AfterTargets="Build">
 		<PropertyGroup>
 			<ftpHost>ftp.local</ftpHost>
 			<ftpUser></ftpUser>
 			<ftpPass></ftpPass>
-			<LocalDirectory>..\project\output</LocalDirectory>
+			<LocalDirectory>..\output</LocalDirectory>
 		</PropertyGroup>
         <FtpUploadDirectoryContent
 			ServerHost="$(ftpHost)"
