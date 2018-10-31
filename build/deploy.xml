@@ -34,9 +34,9 @@
 
 	<Target Name="AfterBuild" AfterTargets="CreateWebConfigs">
 		<PropertyGroup>
-			<ftpHost>dev.example.com</ftpHost>
-			<ftpUser>?????</ftpUser>
-			<ftpPass>??????</ftpPass>
+			<ftpHost>ftp.local:21</ftpHost>
+			<ftpUser></ftpUser>
+			<ftpPass></ftpPass>
 			<LocalDirectory>..\project\output</LocalDirectory>
 		</PropertyGroup>
         <FtpUploadDirectoryContent
