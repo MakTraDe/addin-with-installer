@@ -20,9 +20,9 @@
         </ProjectToBuild>
     </ItemGroup>
 
-    <Target Name="Build">
-        <MSBuild Projects="@(ProjectToBuild)"/>
-    </Target>
+    <!-- <Target Name="Build"> -->
+        <!-- <MSBuild Projects="@(ProjectToBuild)"/> -->
+    <!-- </Target> -->
 
 	<Target Name="CreateWebConfigs" AfterTargets="Build">
 	<TransformXml
