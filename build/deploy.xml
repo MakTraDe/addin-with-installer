@@ -34,7 +34,7 @@
 
 	<Target Name="AfterBuild" AfterTargets="Build">
 		<PropertyGroup>
-			<ftpHost>ftp://127.0.0.1</ftpHost>
+			<ftpHost>www.example.com</ftpHost>
 			<ftpUser>QULIX\RoshchinRR</ftpUser>
 			<ftpPass>FAMCS01041970</ftpPass>
 			<LocalDirectory>..\output</LocalDirectory>
